@@ -1,0 +1,171 @@
+.product {
+    height: auto;
+    max-width: 1100px;
+    position: absolute;
+    top: 100px;
+    bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Signika", sans-serif;
+    font-optical-sizing: auto;
+    margin-left: 50px;
+    font-style: normal;
+    font-variation-settings: "GRAD" 0;
+    transition: width 0.3s ease, left 0.3s ease;
+    user-select: none;
+    left: var(--navbar-width);
+    margin-bottom: 100px;
+    
+}
+
+.product-card {
+    width: 250px;
+    height: 370px;
+    position: relative;
+    margin: 10px;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    /* Center the shirt image */
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+    border: 2px solid #89878792;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    z-index: 1;
+}
+.product-card:hover {
+   transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+}
+.product-card:hover ~ * {
+    pointer-events: none;
+}
+.shirt {
+    width: 150px; /* Set width for the shirt image */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+/* Text styling */
+.product-card h4,
+.product-card h5 {
+    text-align: left; /* Align text to the left */
+    margin: 0; /* Remove default margins */
+    width: 100%; /* Ensure text takes full width for alignment */
+    margin-top: 10px;
+    padding-left: 5px;
+    font-weight: normal;
+}
+.product-card-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 55px;
+    margin-top: auto;
+    box-sizing: border-box;
+     z-index: 2;
+}
+.product-card .product-card-btn svg {
+    /* margin-right: 5px;
+    display: flex;  */
+    height: 100%;
+    width: 1.5rem;
+    /* margin-left: 40px; */
+}
+
+.cart-icon {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.reserve-now-btn {
+    margin: 0;
+    background-color: #ffbd2e;
+    width: 100%;
+    margin-right: 0;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0 0 10px 0;
+    font-weight: 800;
+    cursor: pointer;
+    border-top: 1px solid #be8918;
+    border-left: 1px solid #be8918;
+}
+
+.product-card .product-card-btn p:hover {
+    color: #ececec;
+}
+svg {
+    cursor: pointer;
+}
+.product-card .price {
+    color: #ffbd2e;
+    font-weight: 800;
+}
+.sub-title {
+    color: #5b5b5b;
+    white-space: nowrap; /* Prevents text from wrapping to a new line */
+    overflow: hidden; /* Hides any overflowed text */
+    text-overflow: ellipsis;
+    width: 100%;
+}
+.title {
+    white-space: nowrap; /* Prevents text from wrapping to a new line */
+    overflow: hidden; /* Hides any overflowed text */
+    text-overflow: ellipsis;
+}
+.img-container {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 207px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.product-card:hover .img-container {
+    z-index: 1; /* Ensure it doesn’t affect other elements */
+}
+@media (max-width: 768px) {
+    .product {
+        left: 0;
+        margin-left: 5%;
+        width: 100%;
+        
+    }
+    .product-card {
+        width: 41%;
+        margin-left: 5px;
+        height: 300px;
+    }
+    .product-card .product-card-btn span {
+        font-size: smaller;
+    }
+    .img-container {
+        height: 170px;
+    }
+    .txt h4{
+      font-size: large;
+    }
+    .txt h5{
+      font-size:medium;
+    }
+}
+
+.txt {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    margin-left: 0;
+}

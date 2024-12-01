@@ -1,0 +1,284 @@
+.arrow-back:hover{
+    cursor: pointer;
+    background-color: #c9c9c9;
+    
+}
+.arrow-back{
+    display: flex;
+    position: relative;
+    z-index: -1;
+    height: 3em;
+    width: 50px;
+}
+.wrapper{
+    margin-top: 30px;
+    display: flex;
+    padding-bottom: 50px;
+}
+.sub-image{
+    width: 94px;
+    cursor: pointer;
+}
+
+.image-wrapper {
+    
+  background-color: #bdbdbd; /* Change to any color you want */
+  display: inline-block; /* Ensures the wrapper only takes the space needed by the image */
+}
+.main-image-wrapper {
+
+  background-color: #bdbdbd; /* Change to any color you want */
+  display: inline-block; /* Ensures the wrapper only takes the space needed by the image */
+  padding: 10px;
+    height: 500px;
+    border: 2px solid #9f9f9f70;
+}
+.main-image{
+    width: 427px;
+    object-fit: contain;
+}
+.image-container {
+  display: flex;
+  gap: 20px;
+   
+}
+.small-image-container{
+    display: flex;
+  gap: 20px;
+  flex-direction: column;
+  margin-left: 20px;
+  
+}
+.dept-list{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 10px;
+}
+.dept-list option{
+    background-color: transparent;
+    display: flex; /* Enables flex layout on the p elements */
+    align-items: center; /* Centers content vertically */
+    justify-content: center;
+    width: 100px;
+    height: 45px;
+    border: 1px solid #9f9f9f70;
+    border-radius: 5px;
+    color: #5d5d5d;
+    position: relative; /* Allows absolute positioning for the border animation */
+    transition: all 0.3s ease; /* Adds smooth transition to all properties */
+}
+
+.dept-list option::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffbd2e; /* Color of the bottom border */
+    transition: width 0.3s ease; /* Smooth animation for the width */
+}
+
+.dept-list option:hover::after{
+    width: 100%; /* Expands the bottom border on hover */
+}
+.dept-list option:hover{
+    cursor: pointer;
+    color: #ffbd2e;
+
+}
+.size-list{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 10px;
+}
+.size-list option{
+    background-color: transparent;
+    display: flex; /* Enables flex layout on the p elements */
+    align-items: center; /* Centers content vertically */
+    justify-content: center;
+    width: 100px;
+    height: 45px;
+    border: 1px solid #9f9f9f70;
+    border-radius: 5px;
+    color: #5d5d5d;
+      position: relative; /* Allows absolute positioning for the border animation */
+    transition: all 0.3s ease; /* Adds smooth transition to all properties */
+}
+
+.size-list option::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffbd2e; /* Color of the bottom border */
+    transition: width 0.3s ease; /* Smooth animation for the width */
+}
+
+.size-list option:hover::after{
+    width: 100%; 
+    
+}
+.size-list option:hover{
+    cursor: pointer;
+    color: #ffbd2e;
+}
+
+
+
+.details{
+    margin-left: 20px;
+    width: 100%;
+}
+.details h2{
+    font-size: 25px;
+}
+.details h4{
+    margin-top: 20px;
+    
+}
+.details h5{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #5a5a5a;
+
+}
+.details hr{
+    border: 1px solid #9f9f9f70;
+}
+.details h6{
+    margin-top: 30px;
+    color: #797979;
+    font-size: 14px;
+    
+}
+
+
+
+/* Google fonts import link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.qty{
+  height: 40px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+    border-radius: 4px;
+    border: 1px solid #9f9f9f70;
+}
+.qty span{
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  color: #5d5d5d;
+}
+.qty input{
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  color: #5d5d5d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.qty span .num{
+  font-size: 10px;
+  border-right: 2px solid rgba(0,0,0,0.2);
+  border-left: 2px solid rgba(0,0,0,0.2);
+  pointer-events: none;
+
+}
+.main-button{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    
+}
+.details .reserve-btn, .add-cart-btn{
+    height: 40px;
+    width: 120px;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+   
+}
+
+
+.reserve-btn{
+      background-color: #ffbd2e;
+    color: rgb(241, 241, 241);
+    border: 1px solid #e8ac2a87;
+}
+
+.add-cart-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #9f9f9f70;
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+    text-align: center;      
+
+}
+
+.add-cart-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -100%; /* Start off-screen on the right */
+    
+    height: 100%;
+    background-color: #ffbd2e;
+    transition: transform 0.5s ease; /* Smooth sliding effect */
+    z-index: -1; /* Place behind the button text */
+}
+.add-cart-btn:hover::before {
+    transform: translateX(-100%); /* Slide to cover the button */
+}
+
+.add-cart-btn:hover {
+background-color: #ffbd2e;
+color: #fff;
+}
+.wishlist-btn{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 40px;
+    width: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: #ffbd2e;
+    
+}
+.sub-btn a{
+    text-decoration: none;
+    color: #5a5a5a;
+
+}
+.sub-btn{
+    display: flex;
+    gap: 10px;
+}

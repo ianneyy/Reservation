@@ -1,0 +1,116 @@
+
+
+
+/* When sidebar is minimized (closed) */
+
+.nav-button svg{
+    vertical-align: middle;
+    
+}
+#nav-toggle:checked ~ #nav-bar .nav-button svg {
+    vertical-align: middle;
+  
+}
+
+
+.containerr .title {
+  color: #ffbd2e;
+  
+  margin-top: 20px;
+  padding-bottom: 5px;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.containerr .subtitle {
+  font-size: 18px;
+  margin-top: 20px;
+}
+.containerr h3 {
+  margin-top: 30px;
+}
+
+
+.containerr p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.containerr table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.containerr th, .containerr td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.containerr th {
+  background-color: #c9c9c9;
+  border: none;
+  color: #646464;
+}
+
+.containerr td {
+  background-color: transparent;
+  font-weight: 600;
+  border: none;
+  
+}
+
+.containerr button {
+ 
+  
+  border: none;
+  border-radius: 5px;
+ 
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+ 
+    
+
+}
+.cancel-btn{
+   padding: 5px 15px;
+    left: 20px;
+    border-radius: 8px;
+   background-color: #f58a8a;
+}
+.rsv-btn{
+  margin: 0 10px;
+ padding: 10px 15px;
+  left: 20px;
+}
+.cancel-btn:hover {
+  background-color: #f58a8abb; 
+  border: 1px solid #bcbaba;
+  
+}
+
+.containerr a {
+  text-decoration: none;
+}
+
+/* .containerr a:hover {
+  text-decoration: underline;
+} */
+
+
+.containerr svg{
+    height: 30px;
+    width: auto;
+    position: relative;
+    top: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+
+}
+
+.nodata-image{
+  height: 50px;
+}
